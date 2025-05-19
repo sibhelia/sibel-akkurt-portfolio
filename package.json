@@ -3,16 +3,13 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "homepage": "http://harikanani.github.io",
- 
-    "scripts": {
+  "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject"
-
-
   },
   "dependencies": {
     "baseui": "^9.109.0",
@@ -35,7 +32,7 @@
     "sass": "^1.89.0",
     "styled-components": "^5.2.1",
     "styletron-engine-atomic": "^1.4.6",
-    "styletron-react": "^5.2.7"
+    "styletron-react": "^6.1.1"
   },
   "devDependencies": {
     "@iconify/icons-logos": "^1.1.5",
