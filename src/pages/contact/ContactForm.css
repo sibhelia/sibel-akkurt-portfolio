@@ -1,0 +1,86 @@
+.contact-form-wrapper {
+  background-color: #fff;
+  padding: 40px;
+  width: 100%;
+  
+  margin: 40px auto;
+  margin-top: 60px;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(252, 16, 86, 0.15);
+  border-top: 5px solid #FC1056;
+  box-sizing: border-box;
+}
+
+.contact-form-wrapper h2 {
+  text-align: center;
+  color: #FC1056;
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+  outline: none;
+  border-color: #FC1056;
+  box-shadow: 0 0 0 2px rgba(252, 16, 86, 0.2);
+}
+
+.contact-form-wrapper textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form-wrapper button {
+  background-color: #FC1056;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-wrapper button:hover {
+  background-color: #e00d4e;
+}
+
+/* Mobil uyum */
+@media (max-width: 600px) {
+  .contact-form-wrapper {
+    padding: 24px;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .contact-form-wrapper input,
+  .contact-form-wrapper textarea {
+    font-size: 15px;
+  }
+
+  .contact-form-wrapper button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

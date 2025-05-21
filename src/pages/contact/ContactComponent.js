@@ -7,6 +7,7 @@ import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
+import ContactForm from "./ContactForm";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -80,6 +81,13 @@ function Contact(props) {
             </div>
           </div>
         </Fade>
+      
+         <Fade bottom duration={1000} distance="40px">
+      <div className="contact-form-wrapper">
+        <ContactForm />
+      </div>
+    </Fade>
+        
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
